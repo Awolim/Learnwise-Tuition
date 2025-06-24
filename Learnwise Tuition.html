@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnwise Tuition | Education Done Differently</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+        }
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .tutor-card:hover {
+            transform: scale(1.03);
+        }
+        .testimonial-card {
+            box-shadow: 0 4px 6px rgba(0, 51, 102, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                    <i class="fas fa-graduation-cap text-blue-900 text-xl"></i>
+                </div>
+                <span class="text-blue-900 font-bold text-xl">Learnwise Tuition</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-900 hover:text-yellow-500 font-medium">Home</a>
+                <a href="#subjects" class="text-blue-900 hover:text-yellow-500 font-medium">Subjects</a>
+                <a href="#pricing" class="text-blue-900 hover:text-yellow-500 font-medium">Pricing</a>
+                <a href="#tutors" class="text-blue-900 hover:text-yellow-500 font-medium">Tutors</a>
+                <a href="#contact" class="text-blue-900 hover:text-yellow-500 font-medium">Contact</a>
+            </div>
+            <button class="md:hidden text-blue-900">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Expert Online Tutoring for South African Students</h1>
+                <p class="text-xl mb-6">Personalized lessons in Maths, Physical Sciences, and more—aligned with the South African CAPS curriculum.</p>
+                <a href="#subjects" class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-full inline-block transition duration-300">View Subjects</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <<img src="IMG-20221230-WA0023.jpg" alt="Students learning online">
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-6">"Learnwise Tuition is an online tutoring emporium established in 2024, with a mission to revolutionize pre-tertiary education through e-learning. We specialize in boosting student performance in STEM fields, offering tailored support for Grades 8–12."</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <div class="bg-white px-6 py-3 rounded-full shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                        <span>CAPS Aligned</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-full shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                        <span>Expert Tutors</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-full shadow-sm flex items-center">
+                        <i class="fas fa-check-circle text-yellow-500 mr-2"></i>
+                        <span>Flexible Scheduling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Subjects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">100% aligned with the South African Department of Basic Education (CAPS) curriculum.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Subject Card 1 -->
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-40 bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-atom text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Physical Sciences</h3>
+                        <p class="text-gray-600">Master Physics and Chemistry concepts with our expert tutors who break down complex topics into understandable lessons.</p>
+                    </div>
+                </div>
+                
+                <!-- Subject Card 2 -->
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-40 bg-blue-800 flex items-center justify-center">
+                        <i class="fas fa-square-root-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Mathematics</h3>
+                        <p class="text-gray-600">From algebra to calculus, our tutors make math approachable and help build problem-solving skills.</p>
+                    </div>
+                </div>
+                
+                <!-- Subject Card 3 -->
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-40 bg-blue-700 flex items-center justify-center">
+                        <i class="fas fa-leaf text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Agricultural Sciences</h3>
+                        <p class="text-gray-600">Understand agricultural processes, environmental studies, and biological concepts with practical examples.</p>
+                    </div>
+                </div>
+                
+                <!-- Subject Card 4 -->
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-40 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-dna text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Biology</h3>
+                        <p class="text-gray-600">Explore life sciences with engaging lessons that make cellular biology, genetics, and ecology come alive.</p>
+                    </div>
+                </div>
+                
+                <!-- Subject Card 5 -->
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-40 bg-blue-500 flex items-center justify-center">
+                        <i class="fas fa-flask text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Chemistry</h3>
+                        <p class="text-gray-600">Specialized chemistry tutoring focusing on atomic structure, chemical reactions, and practical applications.</p>
+                    </div>
+                </div>
+                
+                <!-- Subject Card 6 -->
+                <div class="subject-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-40 bg-blue-400 flex items-center justify-center">
+                        <i class="fas fa-globe-africa text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Geography</h3>
+                        <p class="text-gray-600">Understand physical and human geography with a focus on South African and global case studies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Affordable Pricing Plans</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Flexible options to suit every student's needs. All prices are monthly.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <!-- Pricing Tier 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-blue-900 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">1 Subject</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-blue-900 mb-4">R400</div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>4 sessions/month</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>1 hour per session</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Expert tutor</span>
+                            </li>
+                        </ul>
+                        <button class="mt-6 w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Pricing Tier 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-blue-800 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">2 Subjects</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-blue-900 mb-4">R600</div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>8 sessions/month</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>1 hour per session</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Expert tutors</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>10% discount</span>
+                            </li>
+                        </ul>
+                        <button class="mt-6 w-full bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Pricing Tier 3 (Popular) -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden transform scale-105 z-10 border-2 border-yellow-400">
+                    <div class="bg-yellow-400 text-blue-900 py-2 px-6 text-center font-bold">
+                        MOST POPULAR
+                    </div>
+                    <div class="bg-blue-700 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">3 Subjects</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-blue-900 mb-4">R900</div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>12 sessions/month</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>1 hour per session</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Expert tutors</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>25% discount</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Priority scheduling</span>
+                            </li>
+                        </ul>
+                        <button class="mt-6 w-full bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Pricing Tier 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-blue-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">All 4 Subjects</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-blue-900 mb-4">R1,400</div>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>16 sessions/month</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>1 hour per session</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Expert tutors</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>30% discount</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Priority scheduling</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-2"></i>
+                                <span>Progress reports</span>
+                            </li>
+                        </ul>
+                        <button class="mt-6 w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>Includes flexible scheduling, expert tutors, and progress tracking. Additional subjects negotiable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">How It Works</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Getting started with Learnwise Tuition is simple and straightforward.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-check text-blue-900 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">1. Book a Trial</h3>
+                    <p class="text-gray-600">Schedule a free trial session to experience our teaching approach and meet your potential tutor.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-graduate text-blue-900 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">2. Match with a Tutor</h3>
+                    <p class="text-gray-600">We'll pair you with the ideal tutor based on your learning style, goals, and schedule.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-blue-900 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">3. Start Learning</h3>
+                    <p class="text-gray-600">Begin your personalized lessons and watch your understanding and grades improve.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contact" class="bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300">
+                    Book Your Free Trial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutors Section -->
+    <section id="tutors" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Meet Our Expert Tutors</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our tutors are highly qualified professionals passionate about student success.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tutor 1 -->
+                <div class="tutor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <img src="IMG-20221230-WA0023.jpg" alt="Tutor" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Ms. Fulemvula Nqodi</h3>
+                        <p class="text-yellow-500 font-medium mb-3">Diploma in Civil Engineering, 2+ years tutoring experience</p>
+                        <p class="text-gray-600">"Passionate about making STEM accessible and exciting for all students through real-world applications."</p>
+                    </div>
+                </div>
+             </div> <!-- Close grid container -->
+</section> <!-- Close tutors section --> 
+                
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Success Stories</h2>
+                <p class="max-w-2xl mx-auto opacity-90">Hear from students and parents about their Learnwise Tuition experience.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-400 flex items-center justify-center text-blue-900 font-bold mr-4">LK</div>
+                        <div>
+                            <h4 class="font-bold">Lerato K.</h4>
+                            <p class="text-sm opacity-80">Grade 11 Student</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"My Physical Sciences mark improved from 45% to 78% in just 4 months with Learnwise! The tutors explain concepts so clearly and give practical examples that make everything click."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-400 flex items-center justify-center text-blue-900 font-bold mr-4">JM</div>
+                        <div>
+                            <h4 class="font-bold">James M.</h4>
+                            <p class="text-sm opacity-80">Grade 10 Student</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"The tutors break down Maths concepts so clearly. I went from struggling to understand algebra to actually enjoying it! Highly recommend Learnwise to any student needing extra help."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-400 flex items-center justify-center text-blue-900 font-bold mr-4">PN</div>
+                        <div>
+                            <h4 class="font-bold">Patricia N.</h4>
+                            <p class="text-sm opacity-80">Parent</p>
+                        </div>
+                    </div>
+                    <p class="italic mb-4">"As a working parent, I struggled to help my son with his Chemistry homework. Learnwise tutors have been a lifesaver - his confidence and marks have improved dramatically in just 2 months."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600">Find answers to common questions about Learnwise Tuition.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <span class="text-left font-medium text-blue-900">How are tutors vetted?</span>
+                        <i class="fas fa-chevron-down text-blue-900 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">All Learnwise tutors undergo rigorous background checks, verification of academic credentials, and curriculum training. We only hire tutors with proven teaching experience who demonstrate exceptional subject knowledge and communication skills.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <span class="text-left font-medium text-blue-900">Can I switch subjects mid-term?</span>
+                        <i class="fas fa-chevron-down text-blue-900 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">Yes! We understand that students' needs may change. You can contact us at any time to adjust your subject selection. We'll help transition you to the new subject with minimal disruption to your learning.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <span class="text-left font-medium text-blue-900">What technology do I need for online sessions?</span>
+                        <i class="fas fa-chevron-down text-blue-900 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">You'll need a reliable internet connection, a computer or tablet with a webcam, and a quiet space for learning. We use Zoom for video sessions and provide access to our digital whiteboard platform. All sessions are recorded for your review.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <span class="text-left font-medium text-blue-900">How do you track student progress?</span>
+                        <i class="fas fa-chevron-down text-blue-900 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">We use a comprehensive progress tracking system that includes regular assessments, tutor feedback, and comparison against CAPS benchmarks. Parents receive monthly progress reports detailing achievements and areas for improvement.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <span class="text-left font-medium text-blue-900">What if I need to cancel or reschedule a session?</span>
+                        <i class="fas fa-chevron-down text-blue-900 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p class="text-gray-600">We require 24 hours notice for cancellations or rescheduling. Sessions canceled with less notice may be subject to a fee. We understand emergencies happen and will work with you in those situations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-blue-900 text-white p-8 md:p-12">
+                            <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
+                            <p class="mb-6">Ready to boost your academic performance? Contact us today to book a trial session or ask any questions.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-yellow-400 p-2 rounded-full mr-4">
+                                        <i class="fas fa-phone text-blue-900"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Call/WhatsApp</h4>
+                                        <p>Fulemvula at +27 76 160 1040 or 071 131 3040</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-yellow-400 p-2 rounded-full mr-4">
+                                        <i class="fas fa-envelope text-blue-900"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Email</h4>
+                                        <p>fulemvula.n@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-yellow-400 p-2 rounded-full mr-4">
+                                        <i class="fas fa-clock text-blue-900"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Hours</h4>
+                                        <p>Monday - Friday: 8am - 6pm<br>Saturday: 9am - 1pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <h2 class="text-2xl font-bold text-blue-900 mb-4">Send Us a Message</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-graduation-cap text-blue-900 text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">Learnwise Tuition</span>
+                    </div>
+                    <p class="mt-2 opacity-80">Education Done Differently</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-sm opacity-80 text-center md:text-right">
+                    <p>&copy; 2024 Learnwise Tuition. All rights reserved.</p>
+                    <p class="mt-1"><a href="#" class="hover:text-yellow-400 underline">Terms & Conditions</a> | <a href="#" class="hover:text-yellow-400 underline">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
